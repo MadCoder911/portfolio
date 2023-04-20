@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color-1: #001425;
+  --main-color-2: #466484;
+  --main-color-2-shade: #49637d;
+  --hover-shade: #05233e;
+}
+html {
+  scroll-behavior: smooth;
+  padding: 30px;
+  background-color: #010c15;
+  height: 100%;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  html {
+    padding: 12px;
+  }
+}
+/* Fonts */
+
+body {
+  font-family: "Fira Code", monospace;
+  color: var(--main-color-2);
+  height: 100%;
+  overflow: hidden;
+  border: 0.1px solid var(--main-color-2);
+  border-radius: 7px;
+  background-color: var(--main-color-1);
+  position: relative;
+}
+/* Containers */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.nav-line {
+  border-bottom: 0.2px solid var(--main-color-2);
+}
+.purple {
+  color: #4d5bce;
+}
+.gray {
+  color: #607b96;
+}
+.green {
+  color: #43d9ad;
+}
+.skin {
+  color: #e99287;
+}
+.light {
+  font-weight: lighter;
+}
