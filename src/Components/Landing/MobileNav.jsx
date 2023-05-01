@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import { useSelector, useDispatch } from "react-redux";
-import { openNavbar, closeNavbar } from "../Features/app/appSlice";
+import { openNavbar, closeNavbar } from "../../Features/app/appSlice";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import { stripBasename } from "@remix-run/router";
 const MobileNav = () => {
   const dispatch = useDispatch();

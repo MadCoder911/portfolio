@@ -1,0 +1,28 @@
+import styled from "styled-components";
+import { Snippet } from "./AboutMe/Snippet";
+const Snippets = () => {
+  return (
+    <Wrapper>
+      <div className="title">// Code snipped showcase:</div>
+      <Snippet />
+      <Snippet />
+    </Wrapper>
+  );
+};
+export default Snippets;
+const Wrapper = styled.section`
+  .title {
+    font-size: 14px;
+  }
+  overflow: scroll;
+  margin: 0px;
+  width: 50%;
+  padding: 20px 20px;
+  height: 100vh;
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: fit-content;
+    overflow: scroll;
+    margin-bottom: 300px;
+  }
+`;

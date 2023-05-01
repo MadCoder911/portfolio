@@ -1,5 +1,13 @@
 import styled from "styled-components";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { changePage } from "../Features/app/appSlice";
 const Landing = () => {
+  const dispatch = useDispatch();
+  const { activePage } = useSelector((store) => store.app);
+  useEffect(() => {
+    dispatch(changePage("landing"));
+  }, []);
   return (
     <Wrapper>
       <div className="gap"></div>
@@ -35,7 +43,7 @@ const Wrapper = styled.main`
   height: 100%;
   width: 100%;
   .gap {
-    width: 230px;
+    width: 270px;
   }
   h1:first-of-type {
     font-weight: 300;

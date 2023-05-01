@@ -1,27 +1,62 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { changePage } from "../../Features/app/appSlice";
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const { activePage } = useSelector((store) => store.app);
+  const checkActive = (tab) => {
+    if (tab === activePage) {
+      return "active-tab";
+    } else return;
+  };
   return (
     <div className="nav-line">
       <Wrapper className="">
         <div className="left">
           <ul>
             <li className="name">
-              <Link to="/">ahmed-essam</Link>
+              <Link to="/" onClick={() => dispatch(changePage("landing"))}>
+                ahmed-essam
+              </Link>
             </li>
             <li>
-              <Link to="/">_hello</Link>
+              <Link
+                to="/"
+                onClick={() => dispatch(changePage("landing"))}
+                className={checkActive("landing")}
+              >
+                _hello
+              </Link>
             </li>
             <li>
-              <Link to="/about">_about-me</Link>
+              <Link
+                to="/about"
+                onClick={() => dispatch(changePage("about"))}
+                className={checkActive("about")}
+              >
+                _about-me
+              </Link>
             </li>
             <li>
-              <Link to="/projects">_projects</Link>
+              <Link
+                to="/projects"
+                onClick={() => dispatch(changePage("projects"))}
+                className={checkActive("projects")}
+              >
+                _projects
+              </Link>
             </li>
           </ul>
         </div>
         <div className="right">
-          <Link to="/contact">_contact-me</Link>
+          <Link
+            to="/contact"
+            onClick={() => dispatch(changePage("contact"))}
+            className={checkActive("contact")}
+          >
+            _contact-me
+          </Link>
         </div>
       </Wrapper>
     </div>
