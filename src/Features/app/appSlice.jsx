@@ -4,7 +4,7 @@ import {
   aboutHobbies,
   aboutProfessional,
 } from "../../Utils/data";
-
+import { projectss } from "../../Utils/projects";
 const initialState = {
   isNavbarOpen: false,
   activePage: "",
@@ -13,6 +13,9 @@ const initialState = {
     "experience I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   data: { ...aboutProfessional },
   lines: 0,
+  activeProject: "all",
+  allProjects: [...projectss],
+  displayedProjects: [],
 };
 
 const appSlice = createSlice({
@@ -52,6 +55,9 @@ const appSlice = createSlice({
     setLines: (state, { payload }) => {
       state.lines = payload;
     },
+    handleActiveProject: (state, { payload }) => {
+      state.activeProject = payload;
+    },
   },
 });
 export const {
@@ -62,5 +68,6 @@ export const {
   updateData,
   updateActiveSubData,
   setLines,
+  handleActiveProject,
 } = appSlice.actions;
 export default appSlice.reducer;
