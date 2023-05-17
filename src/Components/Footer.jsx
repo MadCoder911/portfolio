@@ -93,6 +93,7 @@ const Wrapper = styled.footer`
     }
   }
   @media (max-width: 800px) {
+    position: relative;
     .right {
       display: none;
     }

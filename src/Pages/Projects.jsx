@@ -24,8 +24,5 @@ const Wrapper = styled.main`
 
   @media (max-width: 1000px) {
     display: block;
-    height: fit-content;
-    overflow: scroll;
-    height: calc(100vh - 200px);
   }
 `;
