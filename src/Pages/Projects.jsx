@@ -26,6 +26,6 @@ const Wrapper = styled.main`
     display: block;
     height: fit-content;
     overflow: scroll;
-    height: 85vh;
+    height: calc(100vh - 200px);
   }
 `;
