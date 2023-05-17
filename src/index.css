@@ -7,9 +7,10 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color-1: #001425;
+  --main-color-1: #02172a;
   --main-color-2: #466484;
   --main-color-2-shade: #537290;
+  --border: #1e2d3d;
   --hover-shade: #05233e;
 }
 :after,
@@ -51,7 +52,7 @@ body {
   color: var(--main-color-2);
   height: 100%;
   overflow: hidden;
-  border: 0.1px solid var(--main-color-2);
+  border: 1px solid var(--main-color-2);
   border-radius: 7px;
   background-color: var(--main-color-1);
   position: relative;

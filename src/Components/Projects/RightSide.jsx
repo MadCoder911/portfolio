@@ -35,11 +35,8 @@ const RightSide = () => {
   );
 };
 export default RightSide;
-const Wrapper = styled.section`
-  overflow: scroll;
+const Wrapper = styled.div`
   width: calc(100% - 270px);
-  height: 100vh;
-  position: relative;
 
   .top {
     border-bottom: 0.1px solid var(--main-color-2);
@@ -62,14 +59,19 @@ const Wrapper = styled.section`
     }
   }
   .bottom {
-    max-height: 80vh;
     padding: 60px 100px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
+    position: relative;
+
     overflow: scroll;
   }
-
+  @media (min-width: 1001px) {
+    height: 80vh;
+    position: relative;
+    overflow: scroll;
+  }
   @media (max-width: 1000px) {
     width: 100%;
 
@@ -77,8 +79,7 @@ const Wrapper = styled.section`
       display: none;
     }
     .bottom {
-      height: 68vh;
-      gap: 0px;
+      gap: 10px;
       margin: auto;
       padding: 20px 40px;
       margin: auto;
@@ -86,7 +87,6 @@ const Wrapper = styled.section`
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      overflow: scroll;
     }
   }
 `;

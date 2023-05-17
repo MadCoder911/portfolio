@@ -41,7 +41,5 @@ const Wrapper = styled.section`
     height: fit-content;
     overflow: scroll;
     border-bottom: 1px solid var(--main-color-2);
-    min-height: 40vh;
-    max-height: 55vh;
   }
 `;

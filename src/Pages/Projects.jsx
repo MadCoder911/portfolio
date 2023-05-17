@@ -21,10 +21,11 @@ const Projects = () => {
 export default Projects;
 const Wrapper = styled.main`
   display: flex;
+
   @media (max-width: 1000px) {
     display: block;
     height: fit-content;
     overflow: scroll;
-    height: 100vh;
+    height: 85vh;
   }
 `;

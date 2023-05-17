@@ -1,14 +1,26 @@
 import styled from "styled-components";
 import { AiOutlineRight, AiOutlineCaretDown } from "react-icons/ai";
 import CheckBox from "./CheckBox";
+import { useState } from "react";
 import { stacks } from "../../Utils/projects";
 export const LeftBar = () => {
+  const [showMenu, setShowMenu] = useState(true);
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <Wrapper>
       <div className="top">
-        <AiOutlineCaretDown /> <p>Projects</p>
+        <button
+          onClick={() => handleClick()}
+          className={`${!showMenu && "icon-hidden"}`}
+        >
+          {" "}
+          <AiOutlineCaretDown />
+        </button>{" "}
+        <p>Projects</p>
       </div>
-      <div className="selectors">
+      <div className={`selectors ${!showMenu && "hidden"}`}>
         {stacks.map((stack) => {
           const { icon, name } = stack;
 
@@ -32,20 +44,44 @@ const Wrapper = styled.div`
     border-bottom: 0.1px solid var(--main-color-2);
     color: white;
     font-size: 14px;
-    svg {
+    button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      padding: 0px;
       margin-left: 15px;
+      transition: all 0.2s ease-in-out;
+    }
+    svg {
+      cursor: pointer;
     }
     p {
       padding-left: 10px;
       margin: 0px;
     }
   }
+  .selectors {
+    max-height: 300px;
+    transition: 0.1s all linear;
+  }
+  .hidden {
+    max-height: 0px;
+    overflow: hidden;
+    border: none;
+  }
+  .icon-hidden {
+    transform: rotate(-90deg);
+  }
   @media (max-width: 1000px) {
     height: fit-content;
     width: 100%;
-    border-bottom: 1px solid var(--main-color-2);
   }
   .selectors {
     padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color-2);
+  }
+  .hidden {
+    border: none;
   }
 `;

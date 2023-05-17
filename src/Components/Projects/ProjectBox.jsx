@@ -4,7 +4,7 @@ const ProjectBox = ({ pic, brief, tech, link }) => {
     <Wrapper>
       <img src={pic} alt="" />
       <div className="content">
-        <p>Project Name</p>
+        <p className="title">// project_name</p>
         <p>{brief}</p>
         <a href={link} target="_blank">
           view-project
@@ -19,14 +19,16 @@ const Wrapper = styled.div`
   border-radius: 10px;
   background-color: #011221;
   overflow: hidden;
-  max-width: 400px;
+  max-width: 260px;
+  position: relative;
   img {
     max-width: 100%;
+    border-bottom: 1px solid var(--main-color-2);
   }
   .content {
-    border-top: 1px solid var(--main-color-2);
     padding: 5px 30px;
     margin-bottom: 20px;
+
     p {
       font-size: 14px;
       margin-bottom: 20px;
@@ -45,5 +47,6 @@ const Wrapper = styled.div`
   @media (max-width: 1000px) {
     margin-bottom: 40px;
     margin-top: 40px;
+    max-width: 400px;
   }
 `;

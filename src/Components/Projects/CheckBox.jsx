@@ -51,6 +51,9 @@ const Wrapper = styled.div`
     height: 15px;
     border-radius: 3px;
   }
+  input[type="checkbox"]:hover {
+    scale: 1.2;
+  }
   input[type="checkbox"]::before {
     content: "";
     width: 15px;
