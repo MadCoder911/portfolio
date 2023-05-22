@@ -25,7 +25,7 @@ const RightContent = () => {
 export default RightContent;
 const Wrapper = styled.section`
   flex: 1;
-  overflow: scroll;
+
   .top-section {
     border-bottom: 0.2px solid var(--main-color-2);
     p {
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
   }
   @media (max-width: 1000px) {
     width: 100%;
-
+    overflow: scroll;
     .top-section {
       display: none;
     }

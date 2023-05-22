@@ -105,7 +105,7 @@ const Wrapper = styled.main`
       color: #43d9ad;
     }
     .bottom {
-      margin-top: 120px;
+      margin-top: 40px;
     }
   }
 `;
