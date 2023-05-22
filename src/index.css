@@ -55,7 +55,7 @@ html {
 body {
   font-family: "Fira Code", monospace;
   color: var(--main-color-2);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   border: 1px solid var(--main-color-2);
   border-radius: 7px;

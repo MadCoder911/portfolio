@@ -97,6 +97,7 @@ const Wrapper = styled.main`
   }
   @media (max-width: 1000px) {
     flex-direction: column;
+    height: 100%;
     .small-menu {
       display: flex;
       flex-direction: row;
