@@ -69,7 +69,7 @@ const Wrapper = styled.main`
   }
   @media (max-width: 1000px) {
     margin-top: 0px;
-    height: calc(100vh - 98px);
+    height: calc(90vh + 100px);
     .gap {
       width: 20px;
     }
