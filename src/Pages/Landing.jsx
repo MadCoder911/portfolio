@@ -67,8 +67,9 @@ const Wrapper = styled.main`
     z-index: 2;
     max-width: 1000px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     margin-top: 0px;
+
     .gap {
       width: 20px;
     }

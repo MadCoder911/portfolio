@@ -36,7 +36,7 @@ export default Footer;
 const Wrapper = styled.footer`
   background-color: var(--main-color-1);
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   overflow: hidden;
   height: 40px;
   width: 100%;
@@ -93,7 +93,6 @@ const Wrapper = styled.footer`
     }
   }
   @media (max-width: 800px) {
-    position: relative;
     .right {
       display: none;
     }

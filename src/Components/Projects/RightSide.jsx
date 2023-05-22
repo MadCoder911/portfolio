@@ -79,6 +79,7 @@ const Wrapper = styled.div`
       display: none;
     }
     .bottom {
+      flex-shrink: 0;
       gap: 10px;
       margin: auto;
       padding: 20px 40px;

@@ -25,6 +25,11 @@ html {
   height: 100%;
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  html {
+    overflow: scroll;
+  }
+}
 ::-webkit-scrollbar-thumb {
   background: #607b96;
 }
@@ -57,9 +62,11 @@ body {
   background-color: var(--main-color-1);
   position: relative;
 }
+
 @media (max-width: 1000px) {
   body {
     overflow: scroll;
+    height: auto;
   }
 }
 /* Containers */
