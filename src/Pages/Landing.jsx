@@ -40,7 +40,7 @@ const Wrapper = styled.main`
   display: flex;
   color: white;
   margin-top: 90px;
-  height: 100%;
+  height: 90vh;
   width: 100%;
   .gap {
     width: 270px;

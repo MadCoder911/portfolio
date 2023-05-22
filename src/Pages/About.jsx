@@ -122,6 +122,6 @@ const Wrapper = styled.main`
     }
   }
   @media (max-width: 1000px) {
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 `;

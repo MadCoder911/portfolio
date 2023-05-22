@@ -58,7 +58,8 @@ const Wrapper = styled.section`
     }
     .bottom-section {
       display: flex;
-      overflow: scroll;
+      /* overflow: scroll; */
+      height: auto;
       flex-direction: column;
       width: 100%;
       p {
