@@ -68,7 +68,7 @@ const Wrapper = styled.div`
     overflow: scroll;
   }
   @media (min-width: 1001px) {
-    height: 80vh;
+    height: calc(100vh - 150px);
     position: relative;
     overflow: scroll;
   }
