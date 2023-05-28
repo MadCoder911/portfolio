@@ -12,4 +12,7 @@ export const ContactMe = () => {
 const Wrapper = styled.main`
   display: flex;
   position: relative;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;

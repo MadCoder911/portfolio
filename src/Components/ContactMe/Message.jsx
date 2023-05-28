@@ -17,4 +17,8 @@ const Wrapper = styled.section`
   overflow: hidden;
   max-width: 650px;
   align-items: center;
+  @media (max-width: 1000px) {
+    display: none;
+    width: 0px;
+  }
 `;

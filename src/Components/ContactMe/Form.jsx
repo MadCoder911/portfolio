@@ -14,8 +14,8 @@ const Form = () => {
     (store) => store.app
   );
   const date = new Date();
-  const finalDate = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`;
-  console.log(finalDate, date);
+  const finalDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+
   const dispatch = useDispatch();
   const handleInput = (e) => {
     dispatch(handleFormChange({ name: e.target.name, value: e.target.value }));
@@ -112,5 +112,13 @@ const Wrapper = styled.div`
   } */
   .show {
     transform: translateY(0px);
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+    border-right: none;
+
+    form {
+      width: 80%;
+    }
   }
 `;

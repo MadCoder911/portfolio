@@ -110,4 +110,8 @@ const Wrapper = styled.section`
   .icon-hidden {
     transform: rotate(-90deg);
   }
+  @media (max-width: 1000px) {
+    height: fit-content;
+    width: 100%;
+  }
 `;

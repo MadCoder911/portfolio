@@ -26,6 +26,7 @@ const Wrapper = styled.section`
     height: 35px;
     display: flex;
     align-items: center;
+
     p {
       padding: 0px;
       margin: 0px;
@@ -39,6 +40,13 @@ const Wrapper = styled.section`
         margin-right: 20px;
         font-size: 14px;
       }
+    }
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: fit-content;
+    .top {
+      display: none;
     }
   }
   .bottom {

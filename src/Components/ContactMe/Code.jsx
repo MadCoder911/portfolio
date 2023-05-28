@@ -9,7 +9,7 @@ const Code = () => {
   const dispatch = useDispatch();
   const ref = useRef(null);
   let date = new Date();
-  const displayDate = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`;
+  const displayDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
 
   useEffect(() => {
     setHeight(ref.current.clientHeight);
@@ -76,5 +76,8 @@ const Wrapper = styled.div`
     top: 0;
     max-width: 400px;
     overflow: hidden;
+  }
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
