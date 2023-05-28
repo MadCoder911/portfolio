@@ -1,11 +1,11 @@
 import styled from "styled-components";
-const ProjectBox = ({ pic, brief, tech, link }) => {
+const ProjectBox = ({ name, pic, brief, tech, link }) => {
   console.log(link);
   return (
     <Wrapper>
       <img src={pic} alt="" />
       <div className="content">
-        <p className="title">// project_name</p>
+        <p className="title">// {name}</p>
         <p>{brief}</p>
         <a href={link} target="_blank">
           view-project
