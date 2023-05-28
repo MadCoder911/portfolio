@@ -14,5 +14,7 @@ const Wrapper = styled.main`
   position: relative;
   @media (max-width: 1000px) {
     flex-direction: column;
+    height: calc(100vh - 127px);
+    overflow: scroll;
   }
 `;
