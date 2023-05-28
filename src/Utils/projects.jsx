@@ -46,6 +46,6 @@ export const projectss = [
     brief:
       "Landing page built for via club built with React, redux toolkit and framer-motion",
     tech: "react",
-    link: "https://github.com/",
+    link: "https://via-club-main-test.vercel.app/",
   },
 ];
