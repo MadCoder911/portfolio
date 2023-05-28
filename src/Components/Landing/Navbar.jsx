@@ -115,6 +115,10 @@ const Wrapper = styled.main`
       font-size: 15px;
     }
   }
+  .active-tab {
+    border-bottom: 2px solid rgb(204, 145, 35);
+    color: white;
+  }
   @media (max-width: 800px) {
     display: none;
   }

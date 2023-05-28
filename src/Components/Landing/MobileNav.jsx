@@ -8,7 +8,12 @@ import Footer from "../Footer";
 import { stripBasename } from "@remix-run/router";
 const MobileNav = () => {
   const dispatch = useDispatch();
-  const { isNavbarOpen } = useSelector((store) => store.app);
+  const { isNavbarOpen, activePage } = useSelector((store) => store.app);
+  const checkActive = (tab) => {
+    if (tab === activePage) {
+      return "active-tab";
+    } else return;
+  };
   return (
     <>
       <Wrapper className="container">
@@ -28,16 +33,40 @@ const MobileNav = () => {
         <Wrapper2>
           <ul>
             <li>
-              <Link to="/">_hello</Link>
+              <Link
+                to="/"
+                onClick={() => dispatch(closeNavbar())}
+                className={checkActive("landing")}
+              >
+                _hello
+              </Link>
             </li>
             <li>
-              <Link to="/about">_about-me</Link>
+              <Link
+                to="/about"
+                onClick={() => dispatch(closeNavbar())}
+                className={checkActive("about")}
+              >
+                _about-me
+              </Link>
             </li>
             <li>
-              <Link to="/projects">_projects</Link>
+              <Link
+                to="/projects"
+                onClick={() => dispatch(closeNavbar())}
+                className={checkActive("projects")}
+              >
+                _projects
+              </Link>
             </li>
             <li>
-              <Link to="/contact">_contact-me</Link>
+              <Link
+                to="/contact"
+                onClick={() => dispatch(closeNavbar())}
+                className={checkActive("contact")}
+              >
+                _contact-me
+              </Link>
             </li>
           </ul>
           <Footer />
@@ -93,5 +122,8 @@ const Wrapper2 = styled.nav`
   a {
     color: var(--main-color-2);
     width: 100%;
+  }
+  .active-tab {
+    color: white;
   }
 `;

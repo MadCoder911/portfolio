@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AiFillCaretDown,
   AiOutlineCaretDown,
@@ -10,6 +10,14 @@ import { RiShareBoxFill } from "react-icons/ri";
 const LeftSide = () => {
   const [contacts, setContacts] = useState(true);
   const [findme, setFindme] = useState(true);
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width <= 1000) {
+      setContacts(false);
+      setFindme(false);
+      return;
+    }
+  }, []);
   return (
     <Wrapper>
       <div className="top">
@@ -113,5 +121,8 @@ const Wrapper = styled.section`
   @media (max-width: 1000px) {
     height: fit-content;
     width: 100%;
+    .find-me {
+      border-bottom: 1px solid var(--border);
+    }
   }
 `;

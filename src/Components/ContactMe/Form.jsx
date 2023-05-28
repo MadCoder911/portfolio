@@ -116,7 +116,9 @@ const Wrapper = styled.div`
   @media (max-width: 1000px) {
     width: 100%;
     border-right: none;
-
+    align-items: start;
+    height: calc(100vh - 300px);
+    margin-top: 30px;
     form {
       width: 80%;
     }
