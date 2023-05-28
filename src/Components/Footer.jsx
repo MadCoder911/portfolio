@@ -43,7 +43,7 @@ const Wrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.2px solid var(--main-color-2);
+  border-top: 1px solid var(--border);
   z-index: 999;
   .left {
     display: flex;
@@ -56,7 +56,7 @@ const Wrapper = styled.footer`
     align-items: center;
     height: 40px;
     font-size: 15px;
-    border-right: 0.2px solid var(--main-color-2);
+    border-right: 1px solid var(--border);
   }
   .left ul {
     display: flex;
@@ -72,7 +72,7 @@ const Wrapper = styled.footer`
     align-items: center;
     height: 100%;
     font-size: 20px;
-    border-right: 1px solid var(--main-color-2);
+    border-right: 1px solid var(--border);
   }
   a:hover {
     color: var(--main-color-2-shade);
@@ -85,7 +85,7 @@ const Wrapper = styled.footer`
       border: none;
       font-size: 23px;
 
-      border-left: 0.2px solid var(--main-color-2);
+      border-left: 1px solid var(--border);
     }
     p {
       font-size: 15px;

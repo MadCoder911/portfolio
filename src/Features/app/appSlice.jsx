@@ -5,6 +5,7 @@ import {
   aboutProfessional,
 } from "../../Utils/data";
 import { projectss } from "../../Utils/projects";
+import axios from "axios";
 const initialState = {
   isNavbarOpen: false,
   activePage: "",
@@ -13,9 +14,28 @@ const initialState = {
     "experience I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   data: { ...aboutProfessional },
   lines: 0,
+  codeLines: 0,
   activeProject: "all",
   allProjects: [...projectss],
   displayedProjects: [],
+  name: "",
+  email: "",
+  message: "",
+  showResp: false,
+  formResponse: "submit-button",
+};
+
+export const submitForm = async (data) => {
+  fetch("https://api.sheetmonkey.io/form/5zaEzoNftNLeUa5HFEAziV", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  }).then((result) => {
+    console.log(result);
+    return result.message;
+  });
 };
 
 const appSlice = createSlice({
@@ -55,8 +75,25 @@ const appSlice = createSlice({
     setLines: (state, { payload }) => {
       state.lines = payload;
     },
+    setCodeLines: (state, { payload }) => {
+      state.codeLines = payload;
+    },
     handleActiveProject: (state, { payload }) => {
       state.activeProject = payload;
+    },
+    handleFormChange: (state, { payload }) => {
+      state[payload.name] = payload.value;
+    },
+    clearForm: (state) => {
+      state.name = "";
+      state.email = "";
+      state.message = "";
+    },
+    setFormResp: (state, { payload }) => {
+      state.formResponse = payload;
+    },
+    showFormResp: (state, { payload }) => {
+      state.showResp = payload;
     },
   },
 });
@@ -69,5 +106,10 @@ export const {
   updateActiveSubData,
   setLines,
   handleActiveProject,
+  handleFormChange,
+  clearForm,
+  setCodeLines,
+  setFormResp,
+  showFormResp,
 } = appSlice.actions;
 export default appSlice.reducer;

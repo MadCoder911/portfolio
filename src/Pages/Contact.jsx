@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { ContactMe } from "../Components/ContactMe/ContactMe";
 import { changePage } from "../Features/app/appSlice";
 const Contact = () => {
   const dispatch = useDispatch();
@@ -8,6 +9,10 @@ const Contact = () => {
   useEffect(() => {
     dispatch(changePage("contact"));
   }, []);
-  return <div>Contact</div>;
+  return (
+    <div>
+      <ContactMe />
+    </div>
+  );
 };
 export default Contact;

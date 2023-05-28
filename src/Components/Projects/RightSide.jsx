@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   width: calc(100% - 270px);
 
   .top {
-    border-bottom: 0.1px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
     min-height: 35px;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       padding-left: 25px;
-      border-right: 0.1px solid var(--main-color-2);
+      border-right: 1px solid var(--border);
       svg {
         margin-left: 25px;
         margin-right: 10px;

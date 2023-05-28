@@ -77,7 +77,7 @@ const Wrapper = styled.main`
     align-items: center;
     height: 100%;
     width: 60px;
-    border-right: 0.2px solid var(--main-color-2);
+    border-right: 1px solid var(--border);
     button {
       background-color: transparent;
       color: var(--main-color-2);
@@ -103,7 +103,7 @@ const Wrapper = styled.main`
       align-items: center;
       justify-content: space-around;
       width: 100%;
-      border-bottom: 0.2px solid var(--main-color-2);
+      border-bottom: 1px solid var(--border);
       button {
         background-color: transparent;
         color: var(--main-color-2);

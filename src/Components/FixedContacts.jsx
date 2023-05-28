@@ -4,7 +4,7 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 import styled from "styled-components";
-const FixedContacts = () => {
+export const FixedContacts = () => {
   return (
     <Wrapper>
       <p className="title">

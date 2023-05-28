@@ -50,14 +50,14 @@ export default Side;
 const Wrapper = styled.section`
   width: 212.5px;
 
-  border-right: 0.2px solid var(--main-color-2);
+  border-right: 1px solid var(--border);
   .title {
     color: white;
     display: flex;
     align-items: center;
     font-weight: 100;
     font-size: 15px;
-    border-bottom: 0.2px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
     margin: 0px;
     padding: 9px;
     svg {
@@ -72,7 +72,7 @@ const Wrapper = styled.section`
   ul {
     padding-left: 20px;
     padding-bottom: 10px;
-    border-bottom: 0.2px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
     li {
       display: flex;
       align-items: center;
@@ -108,7 +108,7 @@ const Wrapper = styled.section`
   @media (max-width: 1000px) {
     width: 100%;
     .contacts {
-      border-bottom: 1px solid var(--main-color-2);
+      border-bottom: 1px solid var(--border);
     }
   }
 `;

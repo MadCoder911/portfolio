@@ -18,7 +18,7 @@ export const LeftBar = () => {
           {" "}
           <AiOutlineCaretDown />
         </button>{" "}
-        <p>Projects</p>
+        <p onClick={() => handleClick()}>Projects</p>
       </div>
       <div className={`selectors ${!showMenu && "hidden"}`}>
         {stacks.map((stack) => {
@@ -33,7 +33,7 @@ export const LeftBar = () => {
 const Wrapper = styled.div`
   width: 270px;
   height: 100vh;
-  border-right: 0.1px solid var(--main-color-2);
+  border-right: 1px solid var(--border);
   .selectors {
     width: 100%;
   }
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
     min-height: 35px;
     display: flex;
     align-items: center;
-    border-bottom: 0.1px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
     color: white;
     font-size: 14px;
     button {
@@ -76,10 +76,12 @@ const Wrapper = styled.div`
   @media (max-width: 1000px) {
     height: fit-content;
     width: 100%;
+    .selectors {
+      border-bottom: 1px solid var(--border);
+    }
   }
   .selectors {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--main-color-2);
   }
   .hidden {
     border: none;

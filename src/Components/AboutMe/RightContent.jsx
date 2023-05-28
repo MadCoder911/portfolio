@@ -27,7 +27,7 @@ const Wrapper = styled.section`
   flex: 1;
 
   .top-section {
-    border-bottom: 0.2px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
     p {
       position: relative;
       margin: 0;
@@ -37,7 +37,7 @@ const Wrapper = styled.section`
       padding: 9px;
       padding-right: 40px;
       display: inline-block;
-      border-right: 0.2px solid var(--main-color-2);
+      border-right: 1px solid var(--border);
     }
     svg {
       position: absolute;

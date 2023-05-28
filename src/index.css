@@ -7,11 +7,13 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color-1: #02172a;
+  --main-color-1: #011528;
   --main-color-2: #466484;
   --main-color-2-shade: #537290;
   --border: #1e2d3d;
   --hover-shade: #05233e;
+  --button: #1e2d3d;
+  --button-hover: #283b4f;
 }
 :after,
 :before {
@@ -57,7 +59,7 @@ body {
   color: var(--main-color-2);
   height: 100%;
   overflow: hidden;
-  border: 1px solid var(--main-color-2);
+  border: 1px solid var(--border);
   border-radius: 7px;
   background-color: var(--main-color-1);
   position: relative;
@@ -108,7 +110,7 @@ ul {
   }
 }
 .nav-line {
-  border-bottom: 0.2px solid var(--main-color-2);
+  border-bottom: 1px solid var(--border);
 }
 .purple {
   color: #4d5bce;
@@ -121,6 +123,9 @@ ul {
 }
 .skin {
   color: #e99287;
+}
+.red {
+  color: rgb(248, 127, 127);
 }
 .light {
   font-weight: lighter;

@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   .snippet {
     margin: 0px 0px;
     padding: 10px 10px;
-    border: 1px solid var(--main-color-2);
+    border: 1px solid var(--border);
     border-radius: 9px;
     background-color: rgb(1, 18, 33);
     padding: 20px;

@@ -87,7 +87,7 @@ const Wrapper2 = styled.nav`
       display: flex;
       align-items: center;
       padding-left: 20px;
-      border-bottom: 0.2px solid var(--main-color-2);
+      border-bottom: 1px solid var(--border);
     }
   }
   a {

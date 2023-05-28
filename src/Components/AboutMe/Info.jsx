@@ -28,7 +28,7 @@ const Wrapper = styled.section`
   padding: 20px 0px;
   padding-right: 20px;
   height: 100vh;
-  border-right: 0.2px solid var(--main-color-2);
+  border-right: 1px solid var(--border);
 
   p {
     line-height: 25px;
@@ -40,6 +40,6 @@ const Wrapper = styled.section`
     width: 100%;
     height: fit-content;
     overflow: scroll;
-    border-bottom: 1px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
   }
 `;

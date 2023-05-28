@@ -95,7 +95,7 @@ const Wrapper = styled.main`
         height: 100%;
         display: flex;
         align-items: center;
-        border-right: 0.2px solid var(--main-color-2);
+        border-right: 1px solid var(--border);
         padding-right: 20px;
         font-size: 15px;
       }
@@ -110,7 +110,7 @@ const Wrapper = styled.main`
       display: flex;
       align-items: center;
       height: 100%;
-      border-left: 0.2px solid var(--main-color-2);
+      border-left: 1px solid var(--border);
       padding: 0px 20px;
       font-size: 15px;
     }

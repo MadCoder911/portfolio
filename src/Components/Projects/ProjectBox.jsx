@@ -15,7 +15,7 @@ const ProjectBox = ({ pic, brief, tech, link }) => {
 };
 export default ProjectBox;
 const Wrapper = styled.div`
-  border: 1px solid var(--main-color-2);
+  border: 1px solid var(--border);
   border-radius: 10px;
   background-color: #011221;
   overflow: hidden;
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   position: relative;
   img {
     max-width: 100%;
-    border-bottom: 1px solid var(--main-color-2);
+    border-bottom: 1px solid var(--border);
   }
   .content {
     padding: 5px 30px;
