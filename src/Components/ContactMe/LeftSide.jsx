@@ -43,13 +43,19 @@ const LeftSide = () => {
       </div>
       <div className={`find-me ${!findme && "hide"}`}>
         <p>
-          <a href="">
+          <a
+            href="https://www.facebook.com/profile.php?id=100009631850410"
+            target="_blank"
+          >
             <RiShareBoxFill /> Facebook
           </a>
         </p>
         <p>
           {" "}
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/ahmed-essam-5668b519b/"
+            target="_blank"
+          >
             {" "}
             <RiShareBoxFill /> LinkedIn
           </a>

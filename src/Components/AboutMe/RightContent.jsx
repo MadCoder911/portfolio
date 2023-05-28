@@ -13,11 +13,10 @@ const RightContent = () => {
           {data.text} <AiOutlineClose />
         </p>
       </div>
-      <div className="bottom-section">
+      <div className="bottom-section ">
         <LinesNumber />
         <Info />
-
-        <Snippets />
+        <Snippets className="" />
       </div>
     </Wrapper>
   );

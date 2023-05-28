@@ -10,12 +10,18 @@ const Footer = () => {
         <p>Find me in:</p>
         <ul>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100009631850410">
+            <a
+              href="https://www.facebook.com/profile.php?id=100009631850410"
+              target="_blank"
+            >
               <GrFacebookOption />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ahmed-essam-5668b519b/">
+            <a
+              href="https://www.linkedin.com/in/ahmed-essam-5668b519b/"
+              target="_blank"
+            >
               <AiFillLinkedin />
             </a>
           </li>
@@ -23,7 +29,7 @@ const Footer = () => {
       </div>
       <ul>
         <li className="right">
-          <a href="https://github.com/MadCoder911">
+          <a href="https://github.com/MadCoder911" target="_blank">
             <p>@MadCoder911</p>
             <BsGithub />
           </a>

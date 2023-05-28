@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import myPic from "../../assets/myPic.png";
 export const Snippet = () => {
   const code = `if (event.body) {
     const { cart, shipping_fee, total_amount } = JSON.parse(event.body);
@@ -9,10 +10,7 @@ export const Snippet = () => {
     <Wrapper>
       <div className="top">
         <div className="left">
-          <img
-            src="https://avatars.githubusercontent.com/u/85245377?v=4"
-            alt=""
-          />
+          <img src={myPic} alt="" />
           <div className="content">
             <p className="purple">@Madcoder911</p>
             <p>Created 2 months ago</p>
@@ -29,6 +27,7 @@ export const Snippet = () => {
 const Wrapper = styled.div`
   margin-top: 30px;
   width: 100%;
+  overflow: scroll;
   .snippet {
     margin: 0px 0px;
     padding: 10px 10px;
