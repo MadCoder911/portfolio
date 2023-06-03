@@ -11,6 +11,7 @@ const Snippets = () => {
 };
 export default Snippets;
 const Wrapper = styled.section`
+  overflow-x: scroll;
   @media (min-width: 1001px) {
     height: calc(100vh - 188px);
   }
