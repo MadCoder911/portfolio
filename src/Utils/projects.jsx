@@ -30,7 +30,7 @@ export const projectss = [
     brief:
       "jobster is a web app for tracking and posting jobs built with React & Redux toolkit",
     tech: "react",
-    link: "https://redux-toolkit-jobster.netlify.app/landing",
+    link: "https://react-job-app.vercel.app/",
   },
   {
     name: "watchflix",
