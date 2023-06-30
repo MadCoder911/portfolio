@@ -9,7 +9,10 @@ const Code = () => {
   const dispatch = useDispatch();
   const ref = useRef(null);
   let date = new Date();
-  const displayDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+  console.log(date.getMonth());
+  const displayDate = `${date.getDate()}/${
+    date.getMonth() + 1
+  }/${date.getFullYear()}`;
 
   useEffect(() => {
     setHeight(ref.current.clientHeight);
