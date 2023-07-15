@@ -28,7 +28,7 @@ const Wrapper = styled.section`
     width: 100%;
     height: fit-content;
     overflow: scroll;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     /* margin-bottom: 300px; */
   }
