@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from "react-redux";
 const LinesNumber = () => {
   const { lines } = useSelector((store) => store.app);
   let presentedLines = Array.from("x".repeat(lines));
-  console.log(presentedLines);
+
   return (
     <Wrapper>
       {presentedLines.map((item, index) => {
-        return <p>{index + 1} *</p>;
+        return <p key={index}>{index + 1} *</p>;
       })}
     </Wrapper>
   );

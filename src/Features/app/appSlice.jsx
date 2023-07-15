@@ -33,7 +33,6 @@ export const submitForm = async (data) => {
     },
     body: JSON.stringify(data),
   }).then((result) => {
-    console.log(result);
     return result.message;
   });
 };

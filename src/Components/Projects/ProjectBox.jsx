@@ -1,6 +1,5 @@
 import styled from "styled-components";
 const ProjectBox = ({ name, pic, brief, tech, link }) => {
-  console.log(link);
   return (
     <Wrapper>
       <img src={pic} alt="" />

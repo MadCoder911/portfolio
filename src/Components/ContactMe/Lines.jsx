@@ -8,7 +8,7 @@ const Lines = () => {
     <Wrapper>
       {lines.map((line, i) => {
         let num = i + 1;
-        return <div>{num}</div>;
+        return <div key={i}>{num}</div>;
       })}
     </Wrapper>
   );

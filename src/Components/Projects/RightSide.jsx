@@ -16,7 +16,6 @@ const RightSide = () => {
         return project.tech === activeProject;
       });
       setActiveProjects([...current]);
-      console.log(activeProjects);
     }
   }, [activeProject]);
   return (
@@ -27,8 +26,8 @@ const RightSide = () => {
         </p>
       </div>
       <div className="bottom">
-        {activeProjects.map((project) => {
-          return <ProjectBox {...project} />;
+        {activeProjects.map((project, i) => {
+          return <ProjectBox {...project} key={i} />;
         })}
       </div>
     </Wrapper>
@@ -83,6 +82,7 @@ const Wrapper = styled.div`
       gap: 10px;
       margin: auto;
       padding: 20px 40px;
+      padding-bottom: 150px;
       margin: auto;
       display: flex;
       flex-wrap: wrap;

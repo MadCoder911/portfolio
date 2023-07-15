@@ -21,10 +21,10 @@ export const LeftBar = () => {
         <p onClick={() => handleClick()}>Projects</p>
       </div>
       <div className={`selectors ${!showMenu && "hidden"}`}>
-        {stacks.map((stack) => {
+        {stacks.map((stack, i) => {
           const { icon, name } = stack;
 
-          return <CheckBox icon={icon} name={name} />;
+          return <CheckBox icon={icon} name={name} key={i} />;
         })}
       </div>
     </Wrapper>

@@ -19,7 +19,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/ahmed-essam-5668b519b/"
+              href="https://www.linkedin.com/in/ahmed-aboulatta/"
               target="_blank"
             >
               <AiFillLinkedin />
