@@ -123,6 +123,6 @@ const Wrapper = styled.main`
   }
   @media (max-width: 1000px) {
     overflow: scroll;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 127px);
   }
 `;
