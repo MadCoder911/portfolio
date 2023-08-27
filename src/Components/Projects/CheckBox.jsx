@@ -4,6 +4,7 @@ import { handleActiveProject } from "../../Features/app/appSlice";
 import { useDispatch, useSelector } from "react-redux";
 const CheckBox = ({ icon, name }) => {
   const { activeProject } = useSelector((store) => store.app);
+  console.log(activeProject);
   const dispatch = useDispatch();
   const handleCheckbox = (e) => {
     if (e.target.value === activeProject) {
