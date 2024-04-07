@@ -7,6 +7,7 @@ import jobster from "../assets/jobster.png";
 import via from "../assets/via.png";
 import movies from "../assets/movies.png";
 import nextblog from "../assets/Portfolio.png";
+import ludas from "../assets/ludas.png";
 export const stacks = [
   {
     icon: <DiJavascript />,
@@ -29,6 +30,14 @@ export const projectss = [
       "Box furniture is an online sotre built with React , Redux toolkit & stripe",
     tech: "react",
     link: "https://box-furniture.vercel.app/",
+  },
+  {
+    name: "ludas_ice-cream",
+    pic: ludas,
+    brief:
+      "Full stack ice-cream shop built using NextJs for frontend, Express and Mongo DB for backend.",
+    tech: "nextjs",
+    link: "https://ludas-icecream.vercel.app/",
   },
   {
     name: "jobster",
@@ -54,6 +63,7 @@ export const projectss = [
     tech: "react",
     link: "https://via-club-main-test.vercel.app/",
   },
+
   {
     name: "personal_blog",
     pic: nextblog,
