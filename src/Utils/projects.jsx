@@ -3,7 +3,11 @@ import { DiJavascript } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import boxFurnitre from "../assets/boxFurniture.png";
-import jobster from "../assets/jobster.png";
+import travelagency from "../assets/travelagency.png";
+import ai from "../assets/ai.png";
+import dreaminn from "../assets/dreaminn.png";
+import kasper from "../assets/kasper.png";
+import elzero from "../assets/elzero.png";
 import via from "../assets/via.png";
 import movies from "../assets/movies.png";
 import nextblog from "../assets/Portfolio.png";
@@ -24,14 +28,6 @@ export const stacks = [
 ];
 export const projectss = [
   {
-    name: "box_furniture",
-    pic: boxFurnitre,
-    brief:
-      "Box furniture is an online sotre built with React , Redux toolkit & stripe",
-    tech: "react",
-    link: "https://box-furniture.vercel.app/",
-  },
-  {
     name: "ludas_ice-cream",
     pic: ludas,
     brief:
@@ -40,13 +36,14 @@ export const projectss = [
     link: "https://ludas-icecream.vercel.app/",
   },
   {
-    name: "jobster",
-    pic: jobster,
+    name: "dream inn",
+    pic: dreaminn,
     brief:
-      "jobster is a web app for tracking and posting jobs built with React & Redux toolkit",
-    tech: "react",
-    link: "https://react-job-app.vercel.app/",
+      "Full stack hotel booking website built using NextJs for frontend, Express and Mongo DB for backend.",
+    tech: "nextjs",
+    link: "https://www.dreaminnegypt.com/",
   },
+
   {
     name: "watchflix",
     pic: movies,
@@ -63,13 +60,34 @@ export const projectss = [
     tech: "react",
     link: "https://via-club-main-test.vercel.app/",
   },
-
   {
-    name: "personal_blog",
-    pic: nextblog,
+    name: "landing page",
+    pic: elzero,
+    brief: "Simple landing page built using html, css and js only.",
+    tech: "javascript",
+    link: "https://madcoder911.github.io/HTML_CSS_Template3/",
+  },
+  {
+    name: "landing page 2",
+    pic: kasper,
+    brief: "Simple landing page built using html, css and js only.",
+    tech: "javascript",
+    link: "https://madcoder911.github.io/HTML_And_CSS_Temp_1/",
+  },
+  {
+    name: "travel agency landing page",
+    pic: travelagency,
     brief:
-      "Personal blog build using NextJs page router and connected with Mongo DB.",
-    tech: "nextjs",
-    link: "https://nextjs-blog-madcoder911.vercel.app/",
+      "Simple demo landing page created for a travel agency using html,css and javascript",
+    tech: "javascript",
+    link: "https://madcoder911.github.io/Travel-agency-landing-page/",
+  },
+  {
+    name: "AI business landing page",
+    pic: ai,
+    brief:
+      "Landingpage created for AI Business using html,css and javascript, (desktop versio only, mobile version is not supported yet)",
+    tech: "react",
+    link: "https://invt-ai-landing.vercel.app/",
   },
 ];

@@ -16,7 +16,7 @@ const Landing = () => {
           <p className="hello">Hello, I am</p>
           <h1>Ahmed Essam</h1>
           <h1 className="light">
-            <span className="purple mob"> {">"} Front-end developer</span>
+            <span className="purple mob"> {">"} Full-stack developer</span>
           </h1>
         </div>
         <div className="bottom">
